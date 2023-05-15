@@ -32,7 +32,7 @@ if st.button('Submit'):
     condition = prediction['forecast']['forecastday'][0]['day']['condition']['text']
     image_icon = prediction['forecast']['forecastday'][0]['day']['condition']['icon']
 
-    st.image(image_icon)
+    st.image('https:' + image_icon)
     st.write(f'**{condition}**')
     st.write(f'The **current** temperature is {pred}')
     st.write(f'The **maximum** temperature today is {pred1}')
