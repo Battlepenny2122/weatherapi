@@ -62,7 +62,7 @@ if st.button('Submit'):
         st.image('https:' + image_icon1)
         st.write(f'**{condition1}**')
         st.write(f'The **current** temperature is {pred}')
-        st.write(f'The **maximum** temperature today is {pred1max}{chr(176)}C')
+        st.write(f'The **maximum** temperature today is {pred1max}{chr(176)}c')
         st.write(f'The **minimum** temperature today is {pred1min}')
 
         st.markdown('**Forecast for the week**')
