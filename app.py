@@ -65,43 +65,43 @@ if st.button('Submit'):
     st.write(f'The **maximum** temperature today is {pred1max}')
     st.write(f'The **minimum** temperature today is {pred1min}')
 
-    st.markdown('**<font size="5"> Forecast for the week</font>**')
+    st.markdown('**Forecast for the week**')
 
-    today_date = datetime.today().strftime('%A') 
+    today_date = datetime.today()
     tomorrow_date = today_date + timedelta(days=1)
     two_day = today_date + timedelta(days=2)
     three_day = today_date + timedelta(days=3)
     four_day = today_date + timedelta(days=4)
     
     with col1:
-        st.write(f'{today_date}')
+        st.write(f'{today_date.strftime('%A')}')
         st.image('https:' + image_icon1)
         st.write(f'{condition1}')
         st.write(f'Max temp: {pred1max}')
         st.write(f'Min temp: {pred1min}')
     with col2:
-        st.write(f'{tomorrow_date}')
+        st.write(f'{tomorrow_date.strftime('%A')}')
         st.image('https:' + image_icon2)
         st.write(f'{condition2}')
         st.write(f'Max temp: {pred2max}')
         st.write(f'Min temp: {pred2min}')  
 
     with col3:
-        st.write(f'{two_day}')
+        st.write(f'{two_day.strftime('%A')}')
         st.image('https:' + image_icon3)
         st.write(f'{condition3}')
         st.write(f'Max temp: {pred3max}')
         st.write(f'Min temp: {pred3min}')
     
     with col4:
-        st.write(f'{three_day}')
+        st.write(f'{three_day.strftime('%A')}')
         st.image('https:' + image_icon4)
         st.write(f'{condition4}')
         st.write(f'Max temp: {pred4max}')
         st.write(f'Min temp: {pred4min}')
 
     with col5:
-        st.write(f'{four_day}')
+        st.write(f'{four_day.strftime('%A')}')
         st.image('https:' + image_icon5)
         st.write(f'{condition5}')
         st.write(f'Max temp: {pred5max}')
