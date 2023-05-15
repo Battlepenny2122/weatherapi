@@ -108,7 +108,7 @@ if st.button('Submit'):
 
     for i in range(5):
         with col1:
-            st.write(f'{day[i]}')
+            st.write(f'{date[i]}')
             st.image('https:' + image_icon_list[i])
             st.write(f'{condition_list[i]}')
             st.write(f'Max temp: {predmax_list[i]}{chr(176)}C')
