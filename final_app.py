@@ -62,4 +62,4 @@ try:
                 else:
                     continue
 except:
-    st.write("City not found! Try another City :)")
+    st.write("**City not found! Try another City :)**")
