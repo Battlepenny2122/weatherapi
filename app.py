@@ -15,7 +15,7 @@ api_key = '2fb4fc4ca9994f03bbc234017231405'
 
 if st.button('Submit'):
 
-    col1,col2,col3,col4,col5 = st.columns(5)
+    
     # enter here the address of your flask api
     url = 'http://api.weatherapi.com/v1/forecast.json'
 
@@ -78,6 +78,8 @@ if st.button('Submit'):
     two = two_day.strftime('%A')
     three = three_day.strftime('%A')
     four = four_day.strftime('%A')
+
+    col1,col2,col3,col4,col5 = st.columns(5)
     
     with col1:
         st.write(f'{today}')
