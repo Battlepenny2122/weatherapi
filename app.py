@@ -20,7 +20,8 @@ if st.button('Submit'):
 
     params = dict(
         q = city,
-        key = api_key)
+        key = api_key,
+        days = 3)
 
     response = requests.get(url, params=params)
 
