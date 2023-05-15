@@ -72,36 +72,42 @@ if st.button('Submit'):
     two_day = today_date + timedelta(days=2)
     three_day = today_date + timedelta(days=3)
     four_day = today_date + timedelta(days=4)
+
+    today = today_date.strftime('%A')
+    tomorrow = tomorrow_date.strftime('%A')
+    two = two_day.strftime('%A')
+    three = three_day.strftime('%A')
+    four = four_day.strftime('%A')
     
     with col1:
-        st.write(f'{today_date.strftime('%A')}')
+        st.write(f'{today}')
         st.image('https:' + image_icon1)
         st.write(f'{condition1}')
         st.write(f'Max temp: {pred1max}')
         st.write(f'Min temp: {pred1min}')
     with col2:
-        st.write(f'{tomorrow_date.strftime('%A')}')
+        st.write(f'{tomorrow}')
         st.image('https:' + image_icon2)
         st.write(f'{condition2}')
         st.write(f'Max temp: {pred2max}')
         st.write(f'Min temp: {pred2min}')  
 
     with col3:
-        st.write(f'{two_day.strftime('%A')}')
+        st.write(f'{two}')
         st.image('https:' + image_icon3)
         st.write(f'{condition3}')
         st.write(f'Max temp: {pred3max}')
         st.write(f'Min temp: {pred3min}')
     
     with col4:
-        st.write(f'{three_day.strftime('%A')}')
+        st.write(f'{three}')
         st.image('https:' + image_icon4)
         st.write(f'{condition4}')
         st.write(f'Max temp: {pred4max}')
         st.write(f'Min temp: {pred4min}')
 
     with col5:
-        st.write(f'{four_day.strftime('%A')}')
+        st.write(f'{four}')
         st.image('https:' + image_icon5)
         st.write(f'{condition5}')
         st.write(f'Max temp: {pred5max}')
