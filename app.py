@@ -108,7 +108,7 @@ if st.button('Submit'):
 
     for i in range(5):
         for k in col:
-            if k.index() == i:
+            if col.index(k) == i:
                 with k:
                     st.write(f'{dates[i]}')
                     st.image('https:' + image_icon_list[i])
