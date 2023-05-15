@@ -30,6 +30,7 @@ if st.button('Submit'):
 
     pred = prediction['current']['temp_c']
 
+# redo this with Class Object next time! DRY
     pred1max = prediction['forecast']['forecastday'][0]['day']['maxtemp_c']
     pred1min = prediction['forecast']['forecastday'][0]['day']['mintemp_c']
     image_icon1 = prediction['forecast']['forecastday'][0]['day']['condition']['icon']
