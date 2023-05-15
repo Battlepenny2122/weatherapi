@@ -108,12 +108,16 @@ if st.button('Submit'):
 
     for i in range(5):
         for k in col:
-            with k:
-                st.write(f'{dates[i]}')
-                st.image('https:' + image_icon_list[i])
-                st.write(f'{condition_list[i]}')
-                st.write(f'Max temp: {predmax_list[i]}{chr(176)}C')
-                st.write(f'Min temp: {predmin_list[i]}{chr(176)}C')
+            if k.index() == i:
+                with k:
+                    st.write(f'{dates[i]}')
+                    st.image('https:' + image_icon_list[i])
+                    st.write(f'{condition_list[i]}')
+                    st.write(f'Max temp: {predmax_list[i]}{chr(176)}C')
+                    st.write(f'Min temp: {predmin_list[i]}{chr(176)}C')
+            else:
+                continue
+            
 
 
     # col1,col2,col3,col4,col5 = st.columns(5)
