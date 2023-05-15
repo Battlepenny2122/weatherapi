@@ -42,4 +42,7 @@ if st.button('Submit'):
     st.write(f'The **maximum** temperature today is {pred1}')
     st.write(f'The **minimum** temperature today is {pred2}')
 
-    st.write(f'Tomorrow is likely to be {condition1}, and the day after is likely to be {condition2}')
+    st.write(f'Tomorrow: {condition1}, and the day after: {condition2}')
+
+st.markdown('I used weatherapi.com, and I am using st.markdown to test **_different fonts_**')
+st.markdown('Bayes Theorem is :green[P(A|B) = P(B|A)*P(A)/P(B)]')
