@@ -13,7 +13,7 @@ This website queries weatherapi.com! Please enter your city and we'll get you yo
 city = st.text_input('Which city do you live in?', value='Sydney')
 api_key = '2fb4fc4ca9994f03bbc234017231405'
 
-if st.button('Sumbit'):
+if st.button('Submit'):
 
     # enter here the address of your flask api
     url = 'http://api.weatherapi.com/v1/forecast.json'
@@ -29,5 +29,5 @@ if st.button('Sumbit'):
     pred = prediction['current']['temp_c']
     pred1 = prediction['forecast']['forecastday'][0]['day']['maxtemp_c']
 
-    print(pred)
-    print(pred1)
+    pred
+    pred1
