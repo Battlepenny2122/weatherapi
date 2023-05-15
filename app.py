@@ -32,3 +32,4 @@ if st.button('Submit'):
 
     st.write(f'The current temperature is {pred}')
     st.write(f'The maximum temperature today is {pred1}')
+    st.write(f'The minimum temperature today is {pred2}')
