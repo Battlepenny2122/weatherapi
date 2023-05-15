@@ -57,15 +57,15 @@ if st.button('Submit'):
     image_icon5 = prediction['forecast']['forecastday'][4]['day']['condition']['icon']
     condition5 = prediction['forecast']['forecastday'][4]['day']['condition']['text']
     
+    with st.container():
+        st.markdown('**Todays forecast**')
+        st.image('https:' + image_icon1)
+        st.write(f'**{condition1}**')
+        st.write(f'The **current** temperature is {pred}')
+        st.write(f'The **maximum** temperature today is {pred1max}')
+        st.write(f'The **minimum** temperature today is {pred1min}')
 
-    st.markdown('**<font size="5"> Todays forecast</font>**')
-    st.image('https:' + image_icon1)
-    st.write(f'**{condition1}**')
-    st.write(f'The **current** temperature is {pred}')
-    st.write(f'The **maximum** temperature today is {pred1max}')
-    st.write(f'The **minimum** temperature today is {pred1min}')
-
-    st.markdown('**Forecast for the week**')
+        st.markdown('**Forecast for the week**')
 
     today_date = datetime.today()
     tomorrow_date = today_date + timedelta(days=1)
