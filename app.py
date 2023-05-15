@@ -104,15 +104,15 @@ if st.button('Submit'):
     # three = three_day.strftime('%A')
     # four = four_day.strftime('%A')
 
-    col = st.columns(5)
+    col1, col2, col3, col4, col5 = st.columns(5)
 
-    for i in range(col):
-        with col[i]:
-            st.write(f'{day[i]}')
+    for i in range(5):
+        with col1:
+            st.write(f'{day[i]}\n\n')
             st.image('https:' + image_icon_list[i])
-            st.write(f'{condition_list[i]}')
-            st.write(f'Max temp: {predmax_list[i]}{chr(176)}C')
-            st.write(f'Min temp: {predmin_list[i]}{chr(176)}C')
+            st.write(f'{condition_list[i]}\n\n')
+            st.write(f'Max temp: {predmax_list[i]}{chr(176)}C\n\n')
+            st.write(f'Min temp: {predmin_list[i]}{chr(176)}C\n\n')
 
 
     # col1,col2,col3,col4,col5 = st.columns(5)
