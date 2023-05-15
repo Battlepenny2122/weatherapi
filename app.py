@@ -56,9 +56,12 @@ if st.button('Submit'):
     pred5min = prediction['forecast']['forecastday'][4]['day']['mintemp_c']
     image_icon5 = prediction['forecast']['forecastday'][4]['day']['condition']['icon']
     condition5 = prediction['forecast']['forecastday'][4]['day']['condition']['text']
+
+    city2 = prediction['location']['name']
+    country = prediction['location']['country']
     
     with st.container():
-        st.markdown('**Todays forecast**')
+        st.markdown(f'**Todays forecast in {city2}, {country}**')
         st.image('https:' + image_icon1)
         st.write(f'**{condition1}**')
         st.write(f'The **current** temperature is {pred}{chr(176)}C')
