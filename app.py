@@ -65,7 +65,7 @@ if st.button('Submit'):
     st.write(f'The **maximum** temperature today is {pred1max}')
     st.write(f'The **minimum** temperature today is {pred1min}')
 
-    st.markdown(**<font size="5"> Forecast for the week</font>**)
+    st.markdown('**<font size="5"> Forecast for the week</font>**')
 
     today_date = datetime.today().strftime('%A') 
     tomorrow_date = today_date + timedelta(days=1)
