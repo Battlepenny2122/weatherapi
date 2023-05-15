@@ -62,8 +62,8 @@ if st.button('Submit'):
         st.image('https:' + image_icon1)
         st.write(f'**{condition1}**')
         st.write(f'The **current** temperature is {pred}')
-        st.write(f'The **maximum** temperature today is {pred1max}{chr(176)}c')
-        st.write(f'The **minimum** temperature today is {pred1min}')
+        st.write(f'The **maximum** temperature today is {pred1max}{chr(176)}C')
+        st.write(f'The **minimum** temperature today is {pred1min}{chr(176)}C')
 
         st.markdown('**Forecast for the week**')
 
@@ -85,35 +85,35 @@ if st.button('Submit'):
         st.write(f'{today}')
         st.image('https:' + image_icon1)
         st.write(f'{condition1}')
-        st.write(f'Max temp: {pred1max}')
-        st.write(f'Min temp: {pred1min}')
+        st.write(f'Max temp: {pred1max}{chr(176)}C')
+        st.write(f'Min temp: {pred1min}{chr(176)}C')
     with col2:
         st.write(f'{tomorrow}')
         st.image('https:' + image_icon2)
         st.write(f'{condition2}')
-        st.write(f'Max temp: {pred2max}')
-        st.write(f'Min temp: {pred2min}')  
+        st.write(f'Max temp: {pred2max}{chr(176)}C')
+        st.write(f'Min temp: {pred2min}{chr(176)}C')  
 
     with col3:
         st.write(f'{two}')
         st.image('https:' + image_icon3)
         st.write(f'{condition3}')
-        st.write(f'Max temp: {pred3max}')
-        st.write(f'Min temp: {pred3min}')
+        st.write(f'Max temp: {pred3max}{chr(176)}C')
+        st.write(f'Min temp: {pred3min}{chr(176)}C')
     
     with col4:
         st.write(f'{three}')
         st.image('https:' + image_icon4)
         st.write(f'{condition4}')
-        st.write(f'Max temp: {pred4max}')
-        st.write(f'Min temp: {pred4min}')
+        st.write(f'Max temp: {pred4max}{chr(176)}C')
+        st.write(f'Min temp: {pred4min}{chr(176)}C')
 
     with col5:
         st.write(f'{four}')
         st.image('https:' + image_icon5)
         st.write(f'{condition5}')
-        st.write(f'Max temp: {pred5max}')
-        st.write(f'Min temp: {pred5min}')
+        st.write(f'Max temp: {pred5max}{chr(176)}C')
+        st.write(f'Min temp: {pred5min}{chr(176)}C')
         
 # st.markdown('I used weatherapi.com, and I am using st.markdown to test **_different fonts_**')
 # st.markdown('Bayes Theorem is :green[P(A|B) = P(B|A)*P(A)/P(B)]')
