@@ -29,7 +29,11 @@ if st.button('Submit'):
     pred = prediction['current']['temp_c']
     pred1 = prediction['forecast']['forecastday'][0]['day']['maxtemp_c']
     pred2 = prediction['forecast']['forecastday'][0]['day']['mintemp_c']
+    condition = prediction['forecast']['forecastday'][0]['day']['condition']['text']
+    image_icon = prediction['forecast']['forecastday'][0]['day']['condition']['icon']
 
-    st.write(f'The current temperature is {pred}')
-    st.write(f'The maximum temperature today is {pred1}')
-    st.write(f'The minimum temperature today is {pred2}')
+    st.image(image_icon)
+    st.write(f'**{condition}**')
+    st.write(f'The **current** temperature is {pred}')
+    st.write(f'The **maximum** temperature today is {pred1}')
+    st.write(f'The **minimum** temperature today is {pred2}')
