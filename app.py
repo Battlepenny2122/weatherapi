@@ -58,7 +58,7 @@ if st.button('Submit'):
     condition5 = prediction['forecast']['forecastday'][4]['day']['condition']['text']
     
 
-    st.markdown('**<font size="5"> Today's forecast</font>**')
+    st.markdown('**<font size="5"> Todays forecast</font>**')
     st.image('https:' + image_icon1)
     st.write(f'**{condition1}**')
     st.write(f'The **current** temperature is {pred}')
