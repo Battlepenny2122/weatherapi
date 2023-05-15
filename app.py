@@ -32,16 +32,16 @@ if st.button('Submit'):
 
 # redo this with Class Object next time! DRY
 
-predmax_list = []
-predmin_list = []
-image_icon_list = []
-condition_list = []
+    predmax_list = []
+    predmin_list = []
+    image_icon_list = []
+    condition_list = []
 
-for i in range(0,5):
-    predmax_list.append(prediction['forecast']['forecastday'][i]['day']['maxtemp_c'])
-    predmin_list.append(prediction['forecast']['forecastday'][i]['day']['mintemp_c'])
-    image_icon_list.append(prediction['forecast']['forecastday'][i]['day']['condition']['icon'])
-    condition_list.append(prediction['forecast']['forecastday'][i]['day']['condition']['text'])
+    for i in range(0,5):
+        predmax_list.append(prediction['forecast']['forecastday'][i]['day']['maxtemp_c'])
+        predmin_list.append(prediction['forecast']['forecastday'][i]['day']['mintemp_c'])
+        image_icon_list.append(prediction['forecast']['forecastday'][i]['day']['condition']['icon'])
+        condition_list.append(prediction['forecast']['forecastday'][i]['day']['condition']['text'])
 
 
     # pred1max = prediction['forecast']['forecastday'][0]['day']['maxtemp_c']
