@@ -76,11 +76,11 @@ if st.button('Submit'):
     
     with st.container():
         st.markdown(f'**Todays forecast in {city2}, {country}**')
-        st.image('https:' + image_icon1)
-        st.write(f'**{condition1}**')
+        st.image('https:' + image_icon_list[0])
+        st.write(f'**{condition_list[0]}**')
         st.write(f'The **current** temperature is {pred}{chr(176)}C')
-        st.write(f'The **maximum** temperature today is {pred1max}{chr(176)}C')
-        st.write(f'The **minimum** temperature today is {pred1min}{chr(176)}C')
+        st.write(f'The **maximum** temperature today is {predmax_list[0]}{chr(176)}C')
+        st.write(f'The **minimum** temperature today is {predmin_list[0]}{chr(176)}C')
 
         st.markdown('**Forecast for the week**')
     
