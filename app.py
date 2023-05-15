@@ -85,7 +85,7 @@ if st.button('Submit'):
         st.markdown('**Forecast for the week**')
     
     today_date = datetime.today()
-    dates = [today_date]
+    dates = [today_date.strftime('%A')]
 
     for i in range(1,5):
         date = today_date + timedelta(days = i)
@@ -106,8 +106,8 @@ if st.button('Submit'):
 
     col = st.columns(5)
 
-    for k in col:
-        for i in range(5):
+    for i in range(5):
+        for k in col:
             with k:
                 st.write(f'{dates[i]}')
                 st.image('https:' + image_icon_list[i])
